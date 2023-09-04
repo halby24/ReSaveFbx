@@ -26,11 +26,12 @@ int main(int argc, char** argv)
 	}
 	else
 	{
+		FBXSDK_printf("\n\nFile: %s\n\n", lFilePath.Buffer());
+        
         char* lPath = NULL;
         FbxAnsiToUTF8(lFilePath.Buffer(), lPath, NULL);
         lFilePath = lPath;
 
-		FBXSDK_printf("\n\nFile: %s\n\n", lFilePath.Buffer());
 		lResult = LoadScene(lSdkManager, lScene, lFilePath.Buffer());
 	}
 
