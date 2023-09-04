@@ -1,6 +1,7 @@
 SET(CMAKE_MIN_REQ_VERSION 2.4)
 cmake_minimum_required(VERSION ${CMAKE_MIN_REQ_VERSION})
-SET(FBX_ROOT "C:/Program Files/Autodesk/FBX/FBX SDK/2020.3.4")
+
+INCLUDE("variables.cmake")
 INCLUDE("CMakeSettings.txt")
 
 FBX_PROJECT(ReSaveFbx .)
